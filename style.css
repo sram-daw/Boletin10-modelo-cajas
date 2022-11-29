@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html {
+    font-family: 'Roboto';
+
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(244, 210, 230);
+    text-align: center;
+    height: max-content;
+    padding: 1em;
+}
+
+#caja-padre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50%;
+}
+
+article {
+    flex: 1;
+    border-width: 1px;
+    border-style: solid;
+    padding: 1em;
+    height: 100vh;
+}
+
+article:nth-child(2) {
+    flex: 2;
+}
+
+/* Version con grid */
+.tablero {
+    border-style: dashed double;
+    border-color: rgb(109, 167, 161) rgb(242, 147, 132) goldenrod rgb(91, 240, 176);
+    height: 45vh;
+    gap: 5px;
+    padding: 1%;
+    margin-top: 3%;
+}
+
+.interior {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    height: 44vh;
+
+}
+
+.fichas {
+    border-style: groove;
+    height: 75%;
+    width: 25%;
+    border-radius: 100%;
+    background-color: rgb(209, 200, 200);
+}
+
+.azul {
+    background-color: blue;
+    border-style: groove;
+    height: 75%;
+    width: 25%;
+    border-radius: 100%;
+}
+
+.rojo {
+    background-color: rgb(255, 59, 5);
+    border-style: groove;
+    height: 75%;
+    width: 25%;
+    border-radius: 100%;
+}
+
+/* Version con flex */
+.tablero2 {
+    border-style: inset dotted double ridge;
+    border-color: rgb(217, 67, 122) rgb(120, 228, 103);
+    height: 45vh;
+    padding: 1%;
+    margin-top: 3%;
+}
+
+.fichas2 {
+    border-style: groove;
+    height: 10%;
+    width: 6%;
+    border-radius: 100%;
+    background-color: rgb(209, 200, 200);
+}
+
+.interior2 {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 44vh;
+    column-gap: 18%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.verde {
+    border-style: groove;
+    height: 10%;
+    width: 6%;
+    border-radius: 100%;
+    background-color: rgb(192, 252, 131);
+}
+
+.rosa {
+    border-style: groove;
+    height: 10%;
+    width: 6%;
+    border-radius: 100%;
+    background-color: rgb(249, 138, 236);
+}
