@@ -47,7 +47,7 @@ article:nth-child(2) {
 
 .interior {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     height: 44vh;
 
@@ -56,7 +56,7 @@ article:nth-child(2) {
 .fichas {
     border-style: groove;
     height: 75%;
-    width: 25%;
+    width: 40%;
     border-radius: 100%;
     background-color: rgb(209, 200, 200);
 }
@@ -65,7 +65,7 @@ article:nth-child(2) {
     background-color: blue;
     border-style: groove;
     height: 75%;
-    width: 25%;
+    width: 40%;
     border-radius: 100%;
 }
 
@@ -73,7 +73,7 @@ article:nth-child(2) {
     background-color: rgb(255, 59, 5);
     border-style: groove;
     height: 75%;
-    width: 25%;
+    width: 40%;
     border-radius: 100%;
 }
 
@@ -88,8 +88,8 @@ article:nth-child(2) {
 
 .fichas2 {
     border-style: groove;
-    height: 10%;
-    width: 6%;
+    height: 22%;
+    width: 15%;
     border-radius: 100%;
     background-color: rgb(209, 200, 200);
 }
@@ -108,16 +108,16 @@ article:nth-child(2) {
 
 .verde {
     border-style: groove;
-    height: 10%;
-    width: 6%;
+    height: 22%;
+    width: 15%;
     border-radius: 100%;
     background-color: rgb(192, 252, 131);
 }
 
 .rosa {
     border-style: groove;
-    height: 10%;
-    width: 6%;
+    height: 22%;
+    width: 15%;
     border-radius: 100%;
     background-color: rgb(249, 138, 236);
 }
