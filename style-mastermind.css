@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html {
+    font-family: 'Roboto';
+
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(218, 250, 196);
+    text-align: center;
+    height: max-content;
+    padding: 1em;
+}
+
+#caja-padre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50%;
+}
+
+article {
+    flex: 1;
+    border-width: 1px;
+    border-style: solid;
+    padding: 1em;
+    height: 100vh;
+}
+
+article:nth-child(2) {
+    flex: 2;
+}
+
+
+.tablero {
+    border-style: double;
+    border-color: rgb(109, 167, 161);
+    height: 80vh;
+    gap: 15px;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: rgb(252, 85, 29);
+    background: radial-gradient(farthest-corner at 40px 40px, rgb(249, 105, 57) 0%, rgba(255, 177, 125, 1) 100%);
+
+}
+
+.sombra {
+    position:absolute;
+    z-index: 0;
+    width: 32%;
+    height: 11%;
+    background-color: rgba(0, 0, 0, 0.739);
+    top: 17%;
+    left: 40%;
+    border-radius: 10px;
+}
+
+.zona-juego {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.fichas-top {
+    border: solid 1px;
+    border-radius: 50%;
+    height: 60%;
+    width: 13%;
+}
+
+.parte-fichas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.fichas-main {
+    border-radius: 50%;
+    border: solid 1px;
+    width: 50%;
+    height: 80%;
+    background-color: rgb(191, 185, 185);
+
+}
+
+.lateral {
+    height: 81%;
+    position: relative;
+    top: 18%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+}
+
+.cajas-lateral {
+    height: 12%;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+
+}
+
+.fichas-lateral {
+    border: solid 1px;
+    border-radius: 50%;
+    height: 55%;
+    width: 50%;
+    background-color: rgb(191, 185, 185);
+}
+
+.verde {
+    background-color: rgb(108, 222, 108);
+}
+
+.rojo {
+    background-color: rgb(244, 50, 44);
+}
+
+.azul {
+    background-color: rgb(24, 104, 251);
+}
+
+.amarillo {
+    background-color: rgb(250, 250, 50);
+}
+
+.naranja {
+    background-color: rgb(252, 169, 53);
+}
+
+.blanco {
+    background-color: rgb(255, 255, 254);
+}
+
+.negro {
+    background-color: rgb(11, 11, 11);
+}
+
+@media (max-width: 600px) {
+    .sombra {
+      top: 32%;
+      width: 28%;
+      left: 42%;
+    }
+  }
+
+  @media (max-height: 810px) {
+    .sombra {
+      top: 21%;
+    }
+  }
+
+  
+@media (max-width: 1030px) {
+    .sombra {
+      top: 22%;
+      width: 28%;
+      left: 42%;
+    }
+  }
